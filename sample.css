@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.wrapper {
+  background: #276fec;
+  position: fixed;
+  width: 100%;
+}
+.wrapper nav {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .content .links {
+  margin-left: 30px;
+  display: flex;
+}
+nav .content .logo {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+.content .links li {
+  list-style: none;
+  line-height: 70px;
+}
+.content .links li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 9px 17px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.content .links li label {
+  display: none;
+}
+.content .links li a:hover {
+  background: #323c4e;
+}
+.wrapper .menu-icon {
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  line-height: 70px;
+  width: 70px;
+  text-align: center;
+}
+.wrapper .menu-icon {
+  display: none;
+}
+/* this fuction is used to hambergan manu */
+.wrapper input[type="checkbox"] {
+  display: none;
+}
+
+.content .links ul li a {
+  display: block;
+  width: 100%;
+  line-height: 30px;
+  border-radius: 0px !important;
+}
+/* Responsive code start */
+/* @media screen and (max-width: 1250px) {
+  .wrapper nav {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  nav .content .links {
+    margin-left: 30px;
+  }
+  .content .links li a {
+    padding: 8px 13px;
+  }
+} */
+
+/* @media screen and (max-width: 900px) {
+  .wrapper .menu-icon {
+    display: block;
+  }
+  /* this helps to able to use cross manu while clicking */
+/* .wrapper #show-menu:checked ~ .menu-icon i::before {
+    content: "\f00d";
+  }  */
+/* small size display button */
+/* nav .content .links {
+    display: block;
+    position: fixed;
+    background: #437ad8;
+    height: 100%;
+    width: 100%;
+    top: 80px;
+    right: -100%;
+    max-width: 350px;
+    overflow-y: auto;
+    padding-bottom: 100px;
+    transition: width 2s ease;
+  } */
+/* kata nira dekhune responsive manu ko content */
+/* nav #show-menu:checked ~ .content .links {
+    right: 0%;
+  }
+  .content .links li {
+    margin: 15px 30px;
+  }
+  .content .links li a {
+    line-height: 40px;
+    font-size: 20px;
+    display: block;
+    padding: 8px 18px;
+    cursor: pointer;
+  }
+} */

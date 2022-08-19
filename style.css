@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* style for navigation */
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 999;
+  transition: all 0.4s ease;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+nav .navbar {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+nav .navbar .logo a {
+  font-weight: 500;
+  font-size: 30px;
+  color: rgb(178, 7, 64);
+  text-decoration: none;
+}
+nav .navbar .menu {
+  display: flex;
+  position: relative;
+}
+nav .navbar .menu li {
+  margin: 0px 10px;
+}
+nav .navbar .menu a {
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  padding: 0 8px;
+  transition: all 0.4s ease;
+}
+nav .navbar .menu a:hover {
+  color: rgb(178, 7, 64);
+}
+.navbar .menu-icon a {
+  color: rgb(178, 7, 64);
+  font-size: 19px;
+  padding: 0 8px;
+}
+
+/* side navigation menu btn */
+nav .menu-btn,
+nav .navbar .menu .cancle-btn {
+  position: absolute;
+  color: white;
+  right: 30px;
+  top: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+nav .menu-btn {
+  color: rgb(178, 7, 64);
+}
+.navbar .menu .menu-btn {
+  color: white;
+}
+
+/* home section style */
+.home {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.home .home-content {
+  flex-basis: 60%;
+  /* width: 90%; */
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home .image {
+  flex-basis: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image img {
+  border: 2px solid black;
+  border-radius: 50%;
+}
+.text .text-one {
+  font-size: 35px;
+  font-weight: 600;
+  color: white;
+  margin: 5px 0;
+}
+.text .text-two {
+  font-size: 40px;
+  font-weight: 500;
+  color: white;
+  margin: 5px 0;
+}
+.text .text-three {
+  font-size: 45px;
+  font-weight: 700;
+  color: white;
+  margin: 5px 0;
+}
+.text .text-four {
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+  margin: 5px 0;
+}
+.button {
+  margin: 6px 0;
+}
+button {
+  margin-right: 10px;
+  padding: 8px 8px;
+  font-size: 20px;
+  background-color: rgb(146, 31, 31);
+  color: white;
+  border-radius: 12px;
+  border: 1px solid black;
+}
+button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+/* about styling */
+section {
+  padding-top: 60px;
+}
+section .content {
+  width: 80%;
+  margin: 40px auto;
+}
+section .title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+section .title span {
+  color: black;
+  position: relative;
+  font-size: 40px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+section .title span::before,
+section .title span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(199, 44, 44);
+  left: 0;
+  bottom: 0;
+}
+section .title span::after {
+  width: 70%;
+  bottom: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.about .about-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .about-details .left {
+  width: 45%;
+}
+.about .left img {
+  height: 300px;
+  width: 260px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+.about .about-details .right {
+  width: 55%;
+}
+section .topic {
+  color: black;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+.about-details .right p {
+  text-align: justify;
+  color: black;
+}
+section .button {
+  margin: 16px 0;
+}
+section .button button {
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+/* skill style */
+.skills {
+  background-color: #f0f6ff;
+}
+.skills .content {
+  padding: 40px 0;
+}
+.skills .skills-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skills-details .text {
+  width: 50%;
+}
+.skills-details p {
+  color: black;
+  text-align: justify;
+}
+.skills .skills-details .experience {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+.skills-details .experience .num {
+  color: black;
+  font-size: 80px;
+}
+.skills-details .experience .exp {
+  color: black;
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 6px;
+}
+.skills-details .boxes {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.skills-details .box {
+  width: calc(100% / 2 - 20px);
+  margin: 20px 0;
+}
+.skills-details .boxes .topic {
+  font-size: 20px;
+  color: rgb(182, 18, 18);
+}
+.skills-details .boxes .per {
+  font-size: 60px;
+  color: rgb(182, 18, 18);
+}
+
+/* service style */
+.services .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services .boxes .box {
+  margin: 20px 0;
+  width: calc(100% / 3 - 20px);
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+  cursor: default;
+  transition: all 0.4s ease;
+}
+.services .boxes .box:hover {
+  background-color: rgb(182, 18, 18);
+  color: white;
+}
+.services .boxes .box .icon {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(182, 18, 18);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  margin: 0 auto 10px auto;
+  color: white;
+  font-size: 22px;
+  transition: all 0.4s ease;
+}
+.boxes .box:hover .icon {
+  background-color: white;
+  color: rgb(182, 18, 18);
+}
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p {
+  color: white;
+  transition: all 0.4s ease;
+}
+
+/* contact style */
+.contact {
+  background-color: #f0f8ff;
+}
+.contact .content {
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.contact .text {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+/* footer style */
+footer {
+  background-color: rgb(182, 18, 18);
+  padding: 16px 0;
+  text-align: center;
+  color: white;
+}
+footer .text span {
+  font-weight: 400;
+  font-size: 17px;
+}
+footer .text span a {
+  color: white;
+  font-weight: 500;
+}
+footer .text span a:hover {
+  text-decoration: underline;
+}
+
+/* style to scroll button */
+.scroll-button a {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  background-color: rgb(182, 18, 18);
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15);
+  display: none;
+}

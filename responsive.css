@@ -1,0 +1,110 @@
+@media (max-width: 1190px) {
+  section .content {
+    width: 85%;
+  }
+}
+@media (max-width: 1000px) {
+  .about .about-details {
+    text-align: center;
+    flex-direction: column;
+  }
+  .about .about-details .left {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .about .about-details .right {
+    width: 90%;
+    margin: 40px 0;
+  }
+
+  .services .boxes .box {
+    margin: 20px 0;
+    width: calc(100% / 2 - 20px);
+  }
+}
+
+@media (max-width: 900px) {
+  .about .left img {
+    height: 250px;
+    width: 200px;
+  }
+}
+@media (max-width: 750px) {
+  nav .navbar {
+    width: 90%;
+  }
+  nav .navbar .menu {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    background-color: rgb(182, 18, 18);
+    height: 100vh;
+    max-width: 400px;
+    width: 100%;
+    padding-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease;
+  }
+  .navbar.active .menu {
+    left: 0;
+  }
+  nav .navbar .menu a {
+    display: block;
+    font-size: 23px;
+    color: white;
+    margin: 10px 0;
+  }
+  nav .navbar .menu-icon {
+    display: none;
+  }
+  nav .menu-btn,
+  nav .navbar .menu .cancle-btn {
+    display: block;
+  }
+  .home {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+  }
+  .home .text-two {
+    font-size: 26px;
+  }
+  .home .text-three {
+    font-size: 30px;
+  }
+  .home .image img {
+    height: 200px;
+    width: 150px;
+  }
+  .skills .skills-details {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .skills-details .text {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .skills-details .boxes {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .services .boxes .box {
+    margin: 20px;
+    width: 100%;
+  }
+  .contact .text {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .skills-details .boxes .box .per {
+    font-size: 30px;
+  }
+}
